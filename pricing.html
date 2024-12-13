@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankster - Digital Bank</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Link -->
+    <script src="https://kit.fontawesome.com/6084e085c5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+<header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="navbar__container">
+            <a href="/" id="navbar-logo">Bankster</a>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/services.html" class="navbar__links">Services</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/pricing.html" class="navbar__links">Pricing</a>
+                </li>
+                <li class="navbar__btn mobile">
+                    <a href="/signup.html" class="button">Sign Up</a>
+                </li>
+            </ul>
+
+            <div class="navbar__btn desktop">
+                <a href="/signup.html" class="button">Sign Up</a>
+            </div>
+
+            <button class="navbar__toggle" id="mobile-menu" aria-label="Toggle Navigation"aria-exbanded=""false>
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+</header>
+
+
+
+
+
+<section class="services">
+    <h2>Choose the right plan for you</h2>
+
+    <!-- pricing toggle button -->
+     <div class="pricing-toggle">
+        <div class="toggle-container">
+            <span class="toggle-option">Monthly</span>
+            <label  class="switch">
+                <input type="checkbox" id="pricing-toggle-checkbox" onclick="switchpricing()"/>
+                <span class="slider"></span>
+            </label>
+            <span class="toggle-option">Yearly</span>
+        </div>
+        <div class="save-percentage-container">
+            <span class="save-percentage">Save 20%</span>
+        </div>
+     </div>
+
+
+     <div class="services__container">
+        <!-- basic plan -->
+         <div class="services__card">
+            <div class="card-content">
+                <h3>Basic Plan</h3>
+                <div class="card-price">
+                    <p class="price monthly-price">10$/mo</p>
+                    <p class="price yearly-price hidden">8$/mo</p>
+                    <a href="/signup.html" class="price-btn">Get Started</a>
+                    <p id="small-desc">Everything that you need to get started</p>
+                </div>
+
+                <div class="card-features">
+                    <p>Features:</p>
+                    <ul>
+                        <li>Digital Checking Account</li>
+                        <li>Access To Basic Features</li>
+                    </ul>
+                </div>
+            </div>
+         </div>
+
+
+
+         <div class="services__card">
+            <div class="card-content">
+                <h3>Standard Plan</h3>
+                <div class="card-price">
+                    <p class="price monthly-price">30$/mo</p>
+                    <p class="price yearly-price hidden">24$/mo</p>
+                    <a href="/signup.html" class="price-btn">Get Started</a>
+                    <p id="small-desc">Perfect for individuals who looking to take control of their finances</p>
+                </div>
+
+                <div class="card-features">
+                    <p>Features:</p>
+                    <ul>
+                        <li>Automatic Expense Tracking</li>
+                        <li>customizable Budgets</li>
+                        <li>Personalized Financial Reports</li>
+                        <li>Goal-Based Saving Tracking</li>
+                        <li>Email & Chat Support</li>
+                    </ul>
+                </div>
+            </div>
+         </div>
+
+
+         <div class="services__card">
+            <div class="card-content">
+                <h3>Premium Plan</h3>
+                <div class="card-price">
+                    <p class="price monthly-price">50$/mo</p>
+                    <p class="price yearly-price hidden">40$/mo</p>
+                    <a href="/signup.html" class="price-btn">Get Started</a>
+                    <p id="small-desc">Ideal for investors and advanced users</p>
+                </div>
+
+                <div class="card-features">
+                    <p>Features:</p>
+                    <ul>
+                        <li>Automatic Expense Tracking</li>
+                        <li>Access To Basic Features</li>
+                        <li>Personalized Reports</li>
+                        <li>Investment Managment</li>
+                        <li>AI-Powered Financial Insights</li>
+                        <li>Priority Support</li>
+                    </ul>
+                </div>
+            </div>
+         </div>
+
+     </div>
+</section>
+<script src="app.js"></script>
+</body>
+</html>
